@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "huntr.dev GitHub Extension",
+  "version": "0.1.1",
+  "description": "View huntr.dev bounty rewards on GitHub as you browse code repositories.",
+  "content_scripts": [{
+    "js": ["js/background.js"],
+    "matches": ["https://github.com/*/*"]
+  }],
+  "permissions": ["webRequest"],
+  "web_accessible_resources": [
+      "html/bounty_tab.html"
+  ],
+  "icons": {   
+      "16": "img/logo_16.png",
+      "24": "img/logo_24.png",
+      "32": "img/logo_32.png",
+      "48": "img/logo_48.png",
+      "128": "img/logo_128.png"
+  }
+}
