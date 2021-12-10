@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "huntr.dev GitHub Extension",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "View huntr.dev bounty rewards on GitHub as you browse code repositories.",
   "content_scripts": [
     {
