@@ -21,7 +21,7 @@ async function fetchReward(url) {
         }),
     })
     .then(response => response.json())
-    .then(({ data }) => data.getBountyMetrics?.bounty_reward);
+    .then(({ data }) => data.getBountyMetrics.bounty_reward);
 };
 
 fetch(chrome.runtime.getURL("/html/bounty_tab.html")).then(r => r.text()).then(async (html) => {
